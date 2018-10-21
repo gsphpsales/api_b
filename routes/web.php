@@ -14,7 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
+//para padronizar as url's seguem o padrão, mudando só o método de requisição.
 $router->get('/all-news', 'APIController@todasNoticias');
 $router->get('/all-news/{id}', 'APIController@noticias');
 $router->post('/all-news', 'APIController@adicionarNoticias');
